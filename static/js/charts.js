@@ -70,7 +70,7 @@ function buildCharts(sample) {
     var metadata = metadataArray[0];
 
     // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
-    var otu_ids = results.otu_ids;
+    var otu_ids = result.otu_ids;
     var otu_labels = result.otu_labels;
     var sample_values = result.sample_values;
 
@@ -85,12 +85,12 @@ function buildCharts(sample) {
     // 8. Create the trace for the bar chart. 
     var barData = [
       {
-        y: ysticks,
+        y: yticks,
         x: sample_values.slice(0, 10).reverse(),
         text: otu_labels.slice(0, 10).reverse(),
         type: "bar",
         orientation: "h",
-        marker:{color: "skyblue"}
+        marker:{color: "blue"}
 
       }
       
@@ -102,7 +102,7 @@ function buildCharts(sample) {
       plot_bgcolor: "rgba(0,0,0,0)",
       paper_bgcolor: "rgba(0,0,0,0)",
       font: {
-        color: "white"
+        color: "black"
       },
       margin: { t: 30, l: 150 }
      
@@ -136,7 +136,7 @@ function buildCharts(sample) {
     plot_bgcolor: "rgba(0,0,0,0)",
     plot_bgcolor: "rgba(0,0,0,0)",
     font:{
-      color: "white"
+      color: "black"
     }
     };
     // 3. Use Plotly to plot the data with the layout.
@@ -154,7 +154,7 @@ function buildCharts(sample) {
      var gaugeTrace = [{
       type: "indicator",
       mode: "gauge+number",
-      value: wfreq,
+      value: result.wfreq,
       title: {text: "<b>Belly Button Washing Frequency</b><br>Scrubs per Week"},
       //marker: {colors: []}
       gauge: {
@@ -181,7 +181,7 @@ function buildCharts(sample) {
       plot_bgcolor: "rgba(0,0,0,0)",
       paper_bgcolor: "rgba(0,0,0,0)",
       font: {
-        color: "white"
+        color: "black"
       }
     };
     // 6. Use Plotly to plot the gauge data and layout.

@@ -1,8 +1,8 @@
 body {
-    color: rgb(15, 14, 14);
+    color: rgb(0, 0, 0);
 }
 .jumbotron {
-    background-image: url("../images/bellybutton.jpg");
+    background-image: url("../images/belly_button.jpg");
     background-size: 100% 100%;
     text-align: center;
 }
