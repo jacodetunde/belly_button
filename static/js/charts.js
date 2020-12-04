@@ -97,7 +97,7 @@ function buildCharts(sample) {
     ];
     // 9. Create the layout for the bar chart. 
     var barLayout = {
-      title: "Top 10 Bacteria Cultures Found",
+      title: "<b>Top 10 Bacteria Cultures Found</b>",
       hovermode: "closet",
       plot_bgcolor: "rgba(0,0,0,0)",
       paper_bgcolor: "rgba(0,0,0,0)",
@@ -121,7 +121,7 @@ function buildCharts(sample) {
     // 2. Create the layout for the bubble chart.
     var bubbleLayout = {
       title: {
-        text: "Bacteria Cultures per Sample"
+        text: "<b>Bacteria Cultures per Sample</b>"
       },
       font: {
         family: "Arial"
