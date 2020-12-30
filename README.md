@@ -12,3 +12,7 @@ This project involves using Plotly and D3.JSON() to create a dynamic and customi
 ## Needs of this project
 - data exploration
 - data processing
+## Samples of the analysis
+![pic2.png](pic2.png)
+![pic1.png](pic1.png)
+![pic3.png](pic3.png)
